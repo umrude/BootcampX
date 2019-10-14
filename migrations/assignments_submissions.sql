@@ -1,7 +1,7 @@
 CREATE TABLE assignments
 (
   id SERIAL PRIMARY KEY NOT NULL,
-  name VARCHAR(255),
+  name VARCHAR,
   content TEXT,
   day INTEGER,
   chapter INTEGER,
@@ -16,3 +16,6 @@ CREATE TABLE assignment_submissions
   duration INTEGER,
   submission_date DATE
 );
+
+-- id, assignment_id, student_id, submission_date, duration
+-- id, name, content, duration, day, chapter
